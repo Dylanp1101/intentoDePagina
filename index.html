@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="obl.css">
+</head>
+
+<body>
+    <section id="contenedor">
+        <header>
+          <img id="logo" src="img/logo.png" alt="logo" />
+     
+        </header>
+        <!-- FIN CABEZAL -->
+        <main>
+          
+            <section id="cabecera">
+                <p id="msgInfo">Usuario conectado</p>
+                <input type="button" id="btnCabeceraCerrarSesion" value="Cerrar Sesion">
+                <hr>
+            </section>
+        
+            <section id="pantallaLogin">
+                <h2>Login</h2>
+                <p>Usuario:</p>
+                <input type="text" id="txtLoginUsuario"><br><br>
+                <p>Contraseña:</p>
+                <input type="password" id="txtLoginPass"><br><br>
+                <input type="button" value="Ingresar" id="btnLoginIngresar"><br><br>
+                <input type="button" value="Registrar Comprador" id="btnRegistrarComprador"><br><br>
+                <p id="msgLogin"></p>
+            </section>
+            <section id="menuAdministrador">
+                <h3>Menu Administrador</h3>
+                <input type="button" value="Listar Compras" id="btnAdminListar">
+                <input type="button" value="Crear Productos" id="btnAdminCrearProducto">
+                <input type="button" value="Administrar Productos" id="btnAdminAdministrarProductos">
+                <input type="button" value="Ver informe" id="btnAdminVerInforme">
+            </section>
+            <section id="menuComprador">
+                <h3>Menu Comprador</h3>
+                <input type="button" value="Productos disponibles" id="btnComprarProducto">
+                <input type="button" value="Ofertas" id="btnveroferta">
+                <input type="button" value="Carrito" id="btnVerCarrito">
+            </section>
+        
+            <section id="pantallaComprarProductos">
+                <h3>Comprar productos</h3>
+                <p id="msgListadoProductosCompra"></p>
+        
+            </section>
+
+            <section id="pantallaCarrito">
+                <h3>Carrito de compra</h3>
+                <p id="msgListaCarrito"></p>
+        
+            </section>
+            <section id="pantallaRegistroComprador">
+                <h3>Registro Comprador</h3>
+                Nombre:
+                <input type="text" id="txtNombre">
+                <br><br>
+                Apellido:
+                <input type="text" id="txtApellido">
+                <br><br>
+                Nombre del Usuario:
+                <input type="text" id="txtUsuario">
+                <br><br>
+                Contraseña:
+                <input type="password" id="txtContraseña">
+                <br><br>
+                Numero de tarjeta
+                <input type="number" id="txtTarjeta">
+                <br><br>
+                CVC:
+                <input type="number" id="txtCvc">
+                <br><br>
+                <input type="button" id="btnIngresarRegistro" value="Ingresar">
+                <br><br>
+                <input type="button" id="btnCancelar" value="Cancelar">
+                <br><br>
+            </section>
+        
+            <section id="pantallaCrearProducto">
+                <h3>Crear Producto</h3>
+                <p>Nombre:</p>
+                <input type="text" name="" id="txtNombreProducto"><br><br>
+                Precio:
+                <input type="number" name="" id="txtPrecioProducto"><br><br>
+                <p>Descripcion:</p>
+                <input type="text" name="" id="txtDescripcionProducto"><br><br>
+                URL imagen:
+                <input type="text" name="" id="txtUrlImgProducto"><br><br>
+                Stock inicial:
+                <input type="number" name="" id="txtStockInicial"><br><br>
+        
+                <input type="button" name="" id="btnCrearProducto" value="Registrar producto"><br><br>
+                <input type="button" name="" id="btnVolverMenuAdmin" value="Volver"><br><br>
+        
+                <p id="msgCrearProducto"></p>
+            </section>
+            <section id="pantallaAdministrarProductos">
+                <h3>Administrar Productos</h3>
+                <p id="msgAdministrarProducto"></p>
+                <p id="msgModificarStock"></p>
+                <input type="button" name="" id="btnVolverMenuAdmin2" value="Volver">
+            </section>
+
+
+            <section id="pantallaListadoCompras">
+                <input type="button" name="" id="btnComprasPendientes" value="Mostrar compras pendientes">
+                <input type="button" name="" id="btnComprasCanceladas" value="Mostrar compras canceladas">
+                <input type="button" name="" id="btnComprasAprobadas" value="Mostrar compras aprobadas">
+                <h3 id="h3ListarCompras"></h3>
+                <p id="msgListadoCompras"></p>
+                <p id="msgListadoComprasMensaje"></p>
+                <input type="button" name="" id="btnVolverMenuAdmin3" value="Volver">
+            </section>
+            
+            <section id="pantallaMostrarInforme">
+                <h3>Informe de ganancias</h3>
+                <p id="msgMostrarInformeganancia"></p>
+            </section>
+        
+            <script src="obl.js"></script>
+          
+
+        </main>
+        <!-- FIN CONTENIDO -->
+        <footer>
+          <a href="https://www.ort.edu.uy">Footer</a>
+        </footer>
+        <!-- FIN PIE -->
+      </section>
+      <!-- FIN CONTENEDOR -->
+  
+</body>
+
+</html>
